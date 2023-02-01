@@ -2,8 +2,9 @@ version: '2'
 services:
   mysql:
     build: .
+    platform: linux/amd64
     ports:
-     - "3306:3306"
+     - "3307:3306"
     volumes:
      - mysql_tls:/var/lib/mysql
     environment:
